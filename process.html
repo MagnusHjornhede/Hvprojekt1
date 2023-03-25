@@ -57,15 +57,16 @@
                     2023). När det kommer till namnkonventioner för element inom HTML och CSS följer projektet Googles
                     HTML/CSS Style Guide (Google, 2023) och råd från CSS-tricks Media Queries (CSS-tricks, 2023).
                 </p>
+                
                 <p>
-                    Vi använt en vanlig metod för att skapa en responsiv design på header,  wrapper, tre 
-                    huvudkolumner och en footer (Jones, 2022). Denna struktur ger möjlighet för sidan att anpassa sig till 
-                    olika skärmstorlekar och enheter och är därför lämplig för responsiv design och få kontroll av elementen inom
-                    wrapper. När det sker en utskrift så tas header logo bort fron sidan. 
+                    Under utveckligen har vi försökt att namnge koden så den följer de kebab case och dash-separeted
+                    praxis för namngivning för t.ex ID, klasser och attribut och kommentera koden där det är nödvändigt för att underlätta
+                    förståelsen av koden för andra utvecklare (Google's HTML/CSS Style Guide).
                 </p>
+                
                 <p>
                     För att sidan ska fungera som det var tänkt på de flesta webbläsare så utförs en så kallad "/* RESET
-                    CSS FOR */" detta för att nollställa och normalisera alla standardinställningar för HTML-element på
+                    CSS FOR */" detta för att nollställa/normalisera alla standardinställningar för HTML-element på
                     sidan (W3Schools. (2023)). Dock så är koden ganska lång och sidan är förhållandevis enkel i sitt utförande 
                     så det faktiskt vara lite onödigt.
                 </p>
@@ -75,9 +76,15 @@
                     En vanlig teknik för att skapa responsiv design är att använda media queries i CSS-koden, vilket gör
                     det möjligt att anpassa stilen på en webbsida baserat på skärmstorlek och t.ex vid utskrift.
                     (CSS-tricks, 2012). För att använda media queries behöver du ange specifika brytpunkter,
-                    baserat på enheternas storlek. En vanlig tstandard brytpunkter för skärmstorlekar som
+                    baserat på enheternas storlek. En vanlig tstandard brytpunkter för skärmstorlekar som runt
                     480px, 768px, 992px och 1200px. Genom att använda media queries kan webbdesigners skapa en layout
                     som fungerar bra på både mobila enheter och desktop-datorer (Duckett, 2014).
+                </p>
+                <p>
+                    Vi använt en vanlig metod för att skapa en responsiv design på header,  wrapper, tre 
+                    huvudkolumner och en footer (Jones, 2022). Denna struktur ger möjlighet för sidan att anpassa sig till 
+                    olika skärmstorlekar och enheter och är därför lämplig för responsiv design och få kontroll av elementen inom
+                    wrapper. När det sker en utskrift så tas header logo bort fron sidan. 
                 </p>
                 
                 <h2>Bilder</h2>
@@ -89,12 +96,7 @@
                     prestanda (W3C).
                 </p>
                 
-                <h2>Namnpraxis</h2>
-                <p>
-                    Uder utveckligen har vi försökt att namnge koden så den följer de kebab case och dash-separeted
-                    praxis för namngivning för t.ex ID, klasser och attribut och kommentera koden där det är nödvändigt för att underlätta
-                    förståelsen av koden för andra utvecklare (Google's HTML/CSS Style Guide).
-                </p>
+      
             </div>
             <div class="column huvud">
                 <h2>Beskrivning av FONTER</h2>
@@ -124,14 +126,14 @@
                 <p>
                     Menyn är strukturerad som en ul-lista och används för att navigera mellan olika delar av sidan.
                     Att använda en ul-lista för navigationsmenyn är en vanlig metod, eftersom det är lätt att skapa
-                    horisontell eller vertikal
-                    navigering, och CSS kan användas för att anpassa stilen på menyn.
+                    horisontell eller vertikal navigering, och CSS kan användas för att anpassa stilen på menyn. Valet
+                    vi gjorde var en enkel horisontell lista.
                 </p>
                 <p>
-                    Efter header-taggen finns en div-klass class="image-container" som innehåller en bild och en text på toppen av
-                    bilden. Att använda en div-klass gör det möjligt att gruppera element tillsammans och tilldela
-                    gemensamma egenskaper med CSS. I detta fall används den för att positionera bilden och texten på
-                    rätt plats.
+                    Tittar man vidare i HTML koden så efter header-taggen finns en div-klass class="image-container" 
+                    som innehåller en bild och en text på toppen av bilden. Att då använda sig av en div-klass gör det 
+                    möjligt att gruppera element tillsammans och tilldela gemensamma egenskaper via CSS. I detta fall 
+                    används den för att positionera bilden och texten på en specifik plats.
                 </p>
 
                 <h2>CSS</h2>
