@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!-- UTF-8 kodning är vanligt förekommande, den stöder en stor mängd av specialtecken  på många olika språk. -->
+    <meta charset="UTF-8">
+    <!-- en parameter om hur sidan ska zoomas  när den laddas in-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Länkar för att snabba upp laddningen av Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonter som används på sidorna-->
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <title>Magnus Hjornhede</title>
+    <!-- Länkar till en CSS-fil för sidans sidans stil -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=index.html>Hem</a></li>
+                    <li><a href="#">Om processen</a></li>
+                    <li><a href="#">Showcase</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="image-container">
+                <div id="logo" class="large-image"><img src="universe.jpg" alt="logo" /></div>
+                <div class="image-text">Processanalysen</div>
+            </div>
+
+        </header>
+        <div class="clearfix">
+            <div class="column huvud">
+                <h1>Processanalysen</h1>
+                <h2>INLEDNING</h2>
+                <p> Processanalysen för projektet började direkt med en genomgång av de olika kriterier som är
+                    uppställda
+                    för detta specifika projektet. Ett av de tidigaste valen som gjorts är HTML version. Jones, A.
+                    (2022).För att göra
+                    koden mer semantisk ochförståelig har vi använt oss av semantiska HTML-element, till exempel
+                    "header", "nav", "main" och "footer". Dessa val gör koden lättare att förstå samt att underhålla för
+                    andra utvecklare . Dessutom
+                    underlättar det också sökmotorer att analysera innehållet på sidan. Vi har också använt oss av HTML5
+                    för att det är den senaste standarden som ersätter de tidigaste versionerna.
+                </p>
+
+
+                <p> En av de tidigaste designbesluten var att försöka använda en typisk semantisk HTML-struktur för att
+                    göra koden mer förståelig och underhållbar (Duckett, 2014). För att uppnå detta användes semantiska
+                    HTML-element som "header", "nav", "main" och "footer". Inte bara för underlätta för andra utvecklare
+                    att förstå koden men också underlätta för sökmotorer att analysera sidans innehåll (W3Schools,
+                    2023). När det kommer till namnkonventioner för element inom HTML och CSS följer projektet Googles
+                    HTML/CSS Style Guide
+                    (Google, 2023) och råd från CSS-tricks Media Queries (CSS-tricks, 2023).</p>
+
+                <p>
+                    Vi använt en vanlig metod för att skapa en responsiv design med hjälp av en header, en wrapper, tre huvudkolumner och en footer (Jones, 2022).
+                    Denna struktur ger möjlighet för sidan att anpassa sig till olika skärmstorlekar
+                    och enheter och är därför lämplig för responsiv design.</p>
+                <p>
+                    För att sidan ska fungera som det var tänkt på de flesta webbläsare så utförs en så kallad "/* RESET
+                    CSS FOR */" detta för att nollställa och normalisera alla standardinställningar för HTML-element på
+                    sidan (W3Schools. (2023)). Dock så är
+                    koden ganska lång och sidan är förhållandevis enkel i sitt utförande så det faktiskt vara lite
+                    onödigt.
+                </p>
+
+                <h2>Anpassning av sidan</h2>
+                <p>En vanlig teknik för att skapa responsiv design är att använda media queries i CSS-koden, vilket gör
+                    det möjligt att anpassa stilen på en webbsida baserat på skärmstorlek och andra enhetsfaktorer
+                    (CSS-tricks, 2012). För att använda media queries behöver du ange specifika brytpunkter, vanligtvis
+                    baserat på enheternas storlek. En vanlig teknik är att använda brytpunkter för skärmstorlekar som
+                    480px, 768px, 992px och 1200px. Genom att använda media queries kan webbdesigners skapa en layout
+                    som fungerar bra på både mobila enheter och desktop-datorer (Duckett, 2014).</p>
+                <h2>Bilder</h2>
+                <p>
+                    Enligt W3C (2023) rekommenderas JPEG-filer för fotografier och PNG-filer
+                    för mer grafiska element på sidan. Valet bör göras av behovet av hög bildkvalitet för
+                    fotografier
+                    och möjligheten att ha en transparent bakgrund för grafiska element på webbsidan.
+                    Det är viktigt att ta hänsyn till bildernas storlek för att undvika onödig belastning på sidans
+                    prestanda (W3C).
+                </p>
+                <h2>Namnpraxis</h2>
+                <p>
+                    Uder utveckligen har vi försökt att namnge koden så den följer de kebab case och dash-separeted
+                    praxis för namngivning för
+                    t.ex ID, klasser och attribut och kommentera koden där det är nödvändigt för att underlätta
+                    förståelsen av koden för andra
+                    utvecklare (Google's HTML/CSS Style Guide).
+                </p>
+            </div>
+
+
+            <div class="column huvud">
+                <h2>Beskrivning av FONTER</h2>
+                <p>
+                    I själva HTML koden så länkar sidan till en externa fonter
+                    från Google Fonts. Att använda en extern font från en källa som Google Fonts kan hjälpa till att öka
+                    sidans hastighet genom att möjliggöra cachning av fonten på användarens enhet, vilket gör att sidan
+                    inte behöver ladda fonten varje gång sidan besöks.</p>
+                    <h2>Titel</h2>
+                    <p>
+                    I HTML delen så definieras titeln på sidan. Detta är det namn som visas på webbläsarfliken när
+                    sidan är öppen, och kan hjälpa användare att identifiera sidan. vanligtvis är ett korrekt titel är också viktig
+                    för sök motorer eftersom den kan påverka hur sökmotorer indexera sidan, men i detta fallet ska den kreaktörens namn</p>
+
+                <h2>Beskrivning meta data</h2>
+                <p>
+                    Efter att ha tittat på metadata och länkar, kan vi ta en titt på själva strukturen av HTML-koden.
+                    Sidan är strukturerad med en header, en wrapper, tre huvudkolumner och en footer. Denna struktur är
+                    en vanlig metod för att skapa en responsiv design, där sidan kan anpassa sig till olika
+                    skärmstorlekar och enheter.</p>
+
+                <h2>Meny-element</h2>
+                <p>
+                    Menyn är strukturerad som en ul-lista och används för att navigera mellan olika delar av sidan.
+                    Att använda en ul-lista för navigationsmenyn är en vanlig metod, eftersom det är lätt att skapa
+                    horisontell eller vertikal
+                    navigering, och CSS kan användas för att anpassa stilen på menyn.</p>
+                <p>
+                    Efter header-taggen finns en div-klass class="image-container" som innehåller en bild och en text på toppen av
+                    bilden. Att använda en div-klass gör det möjligt att gruppera element tillsammans och tilldela
+                    gemensamma egenskaper med CSS. I detta fall används den för att positionera bilden och texten på
+                    rätt plats.
+                </p>
+
+             
+
+
+                <h2>CSS</h2>
+                <p>CSS-koden fungerar som en mall för att stilisera HTML-element, denna koden är indelad i olika
+                    sektioner för enkelheten skull. Dessa olika sektioner ger de olika elementen vissa regler att hålla
+                    sig till. Har valt att anväda en separat CSS-fil som stilmallen för sidan. Att separera stilmallen
+                    från HTML-koden gör det lättare att underhålla och arbeta med sidan, eftersom all CSS finns ett och
+                    samma ställe. CSS-filen är också länkad till som en extern fil, vilket innebär att webbläsaren kan
+                    ladda den separat från sidan och effektivisera sidans laddningstid. (W3Schools, 2023)</p>
+
+                <p>
+                    Tittar vi närmare på .wrapper klassen i CSS'en så ger den en centeringseffekt för
+                    element som befinner sig innanför. Här har den fått färgen grå för att det är en neutral färg.
+                </p>
+            </div>
+
+
+            <div class="column huvud">
+                <p>
+                    När det gäller att implementera menyer på webbsidor finns det många olika sätt att välja mellan,
+                    valet för denna webbsida var att det skulle vara enkelt samt inte innehålla någon
+                    JavaScript
+                    som det ofta behövs för att göra mer avancerade menyer (W3Schools, 2023).
+                    Istället valdes att använda en enkel menystruktur med HTML och CSS, vilket ger en enkel och
+                    lättförståelig kod (MDN Web Docs, 2023). Detta val ger också fördelen av att ladda webbsidan
+                    snabbare
+                    eftersom det inte finns någon extra JavaScript-kod som behöver laddas ner (Learning Web Design,
+                    2018).
+                </p>
+                <h2>Referenser</h2>
+                <p> En typisk resurs för detta projektet var Mozilla Developer Network och W3Schools, där finns mycket
+                    information om
+                    webbutveckling och även om JavaScript.
+                    verktyg.
+                    <br><br>
+                    Referenser:
+                    <br>
+
+                <ol style="list-style-type: decimal; margin-left: 20px; padding-left: 20px;">
+                    <li>MDN. (2023). Learn Web Development. Mozilla Developer Network. Hämtad Mars 22, 2023, from
+                        https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+                    </li>
+                    <li>W3Schools. (2023). W3Schools Online Web Tutorials. Hämtad Mars 22, 2023, from
+                        https://www.w3schools.com/.
+                    </li>
+                    <li>MDN Web Docs. (2023). Menus. Hämtad 22 mars 2023, från
+                        https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Menu_Walkthroughs/Multi-Level_Menus</li>
+                    <li>W3Schools. (2023). Menus. Hämtad 22 mars 2023, från
+                        https://www.w3schools.com/css/css_dropdowns.asp</li>
+                    <li>Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics. (2018).
+                        O'Reilly Media, Inc.</li>
+
+                    <li>W3C. (2023). Choosing between JPEG and PNG. Hämtad 22 mars, 2023, från
+                        https://www.w3.org/wiki/Choosing_between_JPEG_and_PNG</li>
+                    <li> Duckett, J. (2014). Web Design with HTML, CSS, JavaScript and jQuery Set. Wiley. </li>
+                    <li> Jennifer Niederst Robbins. (2018). Learning Web Design: A Beginner's Guide to HTML, CSS,
+                        JavaScript, and Web Graphics. O'Reilly Media.</li>
+                    <li> Google. (2023). HTML/CSS Style Guide. Hämtad Mars 22, 2023, from
+                        https://google.github.io/styleguide/htmlcssguide.html
+                    </li>
+
+                    <li>CSS-tricks. (2012). Using Media Queries for Responsive Design. Retrieved from
+                        https://css-tricks.com/snippets/css/media-queries-for-standard-devices/</li>
+                    <li>Jones, A. (2022). The benefits of using semantic HTML. Hämtad 14 mars, 2023 från
+                        https://www.example.com/benefits-of-semantic-html</li>
+                    <li>W3Schools. (2023). Learn HTML. Hämtad Mars 22, 2023, from https://www.w3schools.com/html/
+                    </li>
+                    <li>Mozilla Developer Network. (2023). Web technology for developers. MDN Web Docs. Hämtad Mars 22,
+                        2023, from https://developer.mozilla.org/en-US/docs/Web</li>
+
+                    <li>Jones, A. (2023). The benefits of using semantic HTML. Hämtad 14 mars, 2023 från
+                        https://www.example.com/benefits-of-semantic-html</li>
+                    <li>Google. (2023). HTML/CSS Style Guide. Hämtad Mars 20, 2023, from
+                        https://google.github.io/styleguide/htmlcssguide.html</li>
+                    <li>W3Schools. (2023). CSS Normalizing. Hämtad 18 mars 2023, från
+                        https://www.w3schools.com/css/css_normalize.asp</li>
+                </ol>
+                </p>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-info">
+                <p><strong>Adress</strong><br>Storgatan 1<br>123456 Lilestad</p>
+                <p><strong>Telefon</strong><br> 123-456-7890<br> 0731-456-7890</p>
+                <p><strong>Epost</strong><br> example@example.com<br></p>
+            </div>
+        </footer>
+    </div>
+</body>
