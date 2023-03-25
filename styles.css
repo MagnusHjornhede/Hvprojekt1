@@ -1,0 +1,484 @@
+/* RESET CSS FOR   */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***********************************
+*************************************/
+
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  /*max-width: 960px;*/
+  background-color: rgb(240, 234, 234);
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  
+}
+
+header {
+  /* max-width: 960px;*/
+  height: 250px;
+}
+
+footer {
+  /* max-width: 960px;*/
+
+}
+
+
+/*
+@font-face {
+  font-family: "Museo Sans";
+  src: url(fonts/MuseoSans_500.otf) format("opentype"),
+    url(fonts/MuseoSans-500.woff2) format('woff2'),
+    url(fonts/MuseoSans-500.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Aller";
+  src: url(fonts/GreatVibes-Regular.otf),
+    url(fonts/Aller_Rg.ttf),
+    url(fonts/Aller_Bd.ttf);
+}
+*/
+/*
+@font-face {
+  font-family: "Bree Serif";
+  src: url(fonts/BreeSerif-Regular.otf) format("opentype")
+}
+
+*/
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #eee;
+
+  color: #222;
+  border: 10px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 20px; /* Rundade kanter */
+}
+
+h1 {
+  font-family: "Bree Serif", Arial, sans-serif;
+  font-size: 30px;
+   
+  /*letter-spacing: 1ch;*/
+  /* text-shadow: 2px 2px gray;*/
+}
+
+h2 {
+  /* “Trade Winds” 400 Normal */
+  font-family: "Bree Serif", Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+   
+  /*letter-spacing: 1ch;*/
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aller", Arial, sans-serif;
+  font-size: 14px;
+   
+  font-weight: bold;
+  padding: 6px;
+}
+
+a:link {
+  /* link color*/
+  color: lightblue;
+  text-decoration: none;
+}
+
+a:hover {
+  /* mouse hover over link */
+  text-decoration: underline;
+  color: darkgray;
+}
+
+p {
+
+  
+  line-height: 16px;
+  /*text-indent: 26px;*/
+  margin-bottom: 15px;
+  /* between paragraphs */
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+  *zoom: 1;
+}
+
+/**/
+
+* {
+  box-sizing: border-box;
+  max-width: 1250px;
+  
+}
+
+.header, .footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  padding: 12px;
+  background-color: darkgrey;
+
+  color: #222;
+  border: 5px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 20px; /* Rundade kanter */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.huvud {
+  width: 33.333%;
+}
+
+.sekondar {
+  width: 33.333%;
+  margin-left: 10px;
+}
+
+.footer {
+  height: 200px;
+}
+
+#logo {
+  height: 200px;
+  overflow: hidden;
+}
+
+/*CSS will kick in for smaller screens as mobile versions*/
+/*https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+@media (max-width:700px) {
+  .column {
+    padding: 12px;
+  }
+
+  .huvud {
+    width: 100%;
+  }
+
+  .sekondar {
+    width: 100%;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background: lightblue;
+  color: #fff;
+  text-align: center;
+}
+
+
+nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #333;
+  height: 50px;
+  color: #fff;
+  position: relative;
+  flex-direction: row;
+  padding: 10px;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+main {
+  padding: 2rem;
+
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-size: 10px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.contact-info p {
+  margin: 10px;
+  color: goldenrod;
+}
+
+.contact-info p strong {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.circular-image {
+  border-radius: 50%;
+}
+
+
+/*Class for making text on the logo*/
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(184, 174, 183);
+  font-size: 30px;
+}
+
+.image-container {
+  position: relative;
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+  }
+
+  .column {
+    padding: 12px;
+  }
+
+  .huvud {
+    width: 50%;
+  }
+
+  .sekondar {
+    width: 100%;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+  }
+
+  .huvud {
+    width: 100%;
+  }
+}
+
+@media print {
+  .large-image {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+}
