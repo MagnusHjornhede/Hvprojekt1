@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonter som används på sidorna, dessa hämtas google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Trade+Winds" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -27,8 +26,8 @@
                 <ul>
                     <li><a href=index.html>Hem</a></li>
                     <li><a href="#">Om processen</a></li>
-                    <li><a href="#">Showcase</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#"><del>Showcase</del></a></li>
+                    <li><a href="#"><del>Kontakt</del></a></li>
                 </ul>
             </nav>
             <div class="image-container">
@@ -72,6 +71,7 @@
                 </p>
 
                 <h2>Anpassning av sidan</h2>
+                <h3>Reponsiv design</h3>
                 <p> 
                     En vanlig teknik för att skapa responsiv design är att använda media queries i CSS-koden, vilket gör
                     det möjligt att anpassa stilen på en webbsida baserat på skärmstorlek och t.ex vid utskrift.
@@ -100,18 +100,17 @@
             </div>
             <div class="column huvud">
                 
-                <h2>Beskrivning meta data</h2>
-                <h3>Beskrivning av FONTER</h3>
+                <h3>Fonter</h3>
                 <p>
-                    I <head> HTML koden så kan man se länkar sidan till en externa fonter från Google Fonts. Att använda 
+                    I "head" elementet i HTML koden så kan man se länkar sidan till en externa fonter från Google Fonts. Att använda 
                     en extern font från en källa som Google Fonts kan hjälpa till att snabba upp sidladdningen genom att möjliggöra 
                     cachning av fonten på klients enhet, vilket gör att sidan inte behöver ladda fonten varje gång sidan besöks, vilket avgjorde
                     beslutet att använda detta tillvägagongssätt.
                 </p>
                     
-                <h2>Titel</h2>
+                <h3>Titel</h3>
                 <p>
-                    I HTML <head> så definieras också titeln på sidan. Detta är det namn som visas på webbläsarfliken när
+                    I HTML "head" så definieras också titeln på sidan. Detta är det namn som visas på webbläsarfliken när
                     sidan är öppen, och kan hjälpa användare att identifiera sidan. vanligtvis är ett korrekt titel är också viktig
                     för sök motorer eftersom den kan påverka hur sökmotorer indexera sidan, men i detta fallet ska den kreaktörens namn.
                 </p>
@@ -124,9 +123,20 @@
                     skärmstorlekar och enheter.
                 </p>
                 
-                <h2>Meny-element</h2>
+                <h3>Meny-element</h3>
                 <p>
-                    Menyn är strukturerad som en ul-lista och används för att navigera mellan olika delar av sidan.
+                    När det gäller att implementera menyer på webbsidor finns det många olika sätt att välja mellan,
+                    valet för denna webbsida var att det skulle vara enkelt samt inte innehålla någon
+                    JavaScript
+                    som det ofta behövs för att göra mer avancerade menyer (W3Schools, 2023).
+                    Istället valdes att använda en enkel menystruktur med HTML och CSS, vilket ger en enkel och
+                    lättförståelig kod (MDN Web Docs, 2023). Detta val ger också fördelen av att ladda webbsidan
+                    snabbare
+                    eftersom det inte finns någon extra JavaScript-kod som behöver laddas ner (Learning Web Design,
+                    2018).
+                </p>
+                <p>
+                    Valet blev en meny är strukturerad som en ul-lista och används för att navigera mellan olika delar av sidan.
                     Att använda en ul-lista för navigationsmenyn är en vanlig metod, eftersom det är lätt att skapa
                     horisontell eller vertikal navigering, och CSS kan användas för att anpassa stilen på menyn. Valet
                     vi gjorde var en enkel horisontell lista.
@@ -147,6 +157,7 @@
                     samma ställe. CSS-filen är också länkad till som en extern fil, vilket innebär att webbläsaren kan
                     ladda den separat från sidan och effektivisera sidans laddningstid. (W3Schools, 2023)
                 </p>
+                <h3>Wrapper klassen</h3>
                  <p>
                     Tittar vi närmare på .wrapper klassen i CSS'en så ger den en centeringseffekt för
                     element som befinner sig innanför. Här har den fått färgen grå för att det är en neutral färg.
@@ -154,17 +165,7 @@
             </div>
 
             <div class="column huvud">
-                <p>
-                    När det gäller att implementera menyer på webbsidor finns det många olika sätt att välja mellan,
-                    valet för denna webbsida var att det skulle vara enkelt samt inte innehålla någon
-                    JavaScript
-                    som det ofta behövs för att göra mer avancerade menyer (W3Schools, 2023).
-                    Istället valdes att använda en enkel menystruktur med HTML och CSS, vilket ger en enkel och
-                    lättförståelig kod (MDN Web Docs, 2023). Detta val ger också fördelen av att ladda webbsidan
-                    snabbare
-                    eftersom det inte finns någon extra JavaScript-kod som behöver laddas ner (Learning Web Design,
-                    2018).
-                </p>
+             
                 
                 <h2>Referenser</h2>
                 <p> 
@@ -239,7 +240,7 @@
                         https://www.w3schools.com/css/css_normalize.asp
                     </li>
                 </ol>
-                </p>
+                
             </div>
         </div>
 
