@@ -184,7 +184,7 @@ footer {
 
 */
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Lato",Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   background-color: #eee;
@@ -196,27 +196,22 @@ body {
 }
 
 h1 {
-  font-family: "Bree Serif", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 30px;
    
-  /*letter-spacing: 1ch;*/
-  /* text-shadow: 2px 2px gray;*/
 }
 
 h2 {
-  /* “Trade Winds” 400 Normal */
-  font-family: "Bree Serif", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 20px;
   font-style: italic;
-   
-  /*letter-spacing: 1ch;*/
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Aller", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
    
   font-weight: bold;
@@ -236,8 +231,6 @@ a:hover {
 }
 
 p {
-
-  
   line-height: 16px;
   /*text-indent: 26px;*/
   margin-bottom: 15px;
@@ -309,11 +302,11 @@ p {
 .huvud {
   width: 33.333%;
 }
-
+/*
 .sekondar {
   width: 33.333%;
   margin-left: 10px;
-}
+}*/
 
 .footer {
   height: 200px;
@@ -324,21 +317,6 @@ p {
   overflow: hidden;
 }
 
-/*CSS will kick in for smaller screens as mobile versions*/
-/*https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
-@media (max-width:700px) {
-  .column {
-    padding: 12px;
-  }
-
-  .huvud {
-    width: 100%;
-  }
-
-  .sekondar {
-    width: 100%;
-  }
-}
 
 
 * {
@@ -354,7 +332,7 @@ header {
   text-align: center;
 }
 
-
+/* Menu layot */
 nav {
   display: flex;
   justify-content: right;
@@ -367,7 +345,7 @@ nav {
   padding: 10px;
 
 }
-
+/*menu layut for ul */
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -376,7 +354,7 @@ nav ul {
   padding: 0;
   
 }
-
+/* and for list items */
 nav li {
   margin-left: 20px;
 }
@@ -391,7 +369,6 @@ nav a {
 
 main {
   padding: 2rem;
-
 }
 
 .contact-info {
@@ -415,9 +392,16 @@ main {
   font-size: 15px;
 }
 
-
+/*Takes an image and crops it to a circular shape */
 .circular-image {
   border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(85, 12, 12, 0.3);
+}
+
+/* Enlarges the image while under mouse pointer*/
+.circular-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -431,6 +415,8 @@ main {
   font-size: 30px;
 }
 
+
+/* positions the image */
 .image-container {
   position: relative;
 }
@@ -473,6 +459,7 @@ main {
   }
 }
 
+/* Removes nav and large images when printing*/
 @media print {
   .large-image {
     display: none;
